@@ -73,5 +73,23 @@ class StockController extends  Controller
         Stock::find($id)->delete();
         return redirect('stocks');
     }
+
+    public function stringify($id)
+    {
+// $customer=Customer::where('id', $id)->select('customer_id','name','address','city','state','zip','home_phone','cell_phone')->first();
+        $customer =Customer::where('cust_number', $id)->select('cust_number', 'name')->first();
+
+        $customer = $customer->toArray();
+        return response()->json($customer);
+    }
+
+    public function stringify1($id)
+    {
+// $customer=Customer::where('id', $id)->select('customer_id','name','address','city','state','zip','home_phone','cell_phone')->first();
+        $stock = Stock::where('symbol', $id)->select('symbol','name','shares','purchase_price','purchased')->first();
+
+        $stock = $stock->toArray();
+        return response()->json($stock);
+    }
 }
 

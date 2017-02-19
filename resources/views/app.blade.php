@@ -6,12 +6,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
 
 </head>
-<body>
-<div class="container">
+<body style="background-color:burlywood;" >
+<div class="container" style="font-family:Tahoma; font-size:20px;">
     <a href="{{ action('CustomerController@index') }}">Customers</a> |
     <a href="{{ action('StockController@index') }}">Stocks</a> |
     <a href="{{ action('InvestmentController@index') }}">Investments</a> |
     <a href="{{ action('MutualFundsController@index') }}">Mutual Funds</a>
+
 </div>
 <hr>
 <div class="container">

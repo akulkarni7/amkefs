@@ -14,8 +14,8 @@ class CreateMutualFundsTable extends Migration
     {
         Schema::create('mutualfunds', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fund name');
-            $table->string('fund asset');
+            $table->string('fund_name');
+            $table->string('fund_assets');
             $table->integer('amount');
             $table->float('purchase_price');
             $table->date('purchased');

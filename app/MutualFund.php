@@ -8,9 +8,9 @@ class MutualFund extends Model
 {
     //
     protected $fillable=[
-        'id',
-        'fund name',
-        'fund asset',
+        'customer_id',
+        'fund_name',
+        'fund_assets',
         'amount',
         'purchase_price',
         'purchased',

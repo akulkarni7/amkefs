@@ -7,15 +7,15 @@
             <tr class="bg-info">
             <tr>
                 <td>Fund Name</td>
-                <td><?php echo ($mutualfund['Fund Name']); ?></td>
+                <td><?php echo ($mutualfund['fund_name']); ?></td>
             </tr>
             <tr>
                 <td>Fund Asset</td>
-                <td><?php echo ($mutualfund['Fund Asset']); ?></td>
+                <td><?php echo ($mutualfund['fund_assets']); ?></td>
             </tr>
             <tr>
                 <td>Amount</td>
-                <td><?php echo ($mutualfund['Amount']); ?></td>
+                <td><?php echo ($mutualfund['amount']); ?></td>
             </tr>
             <tr>
                 <td>Purchase Price </td>

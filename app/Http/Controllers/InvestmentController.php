@@ -73,6 +73,8 @@ class InvestmentController extends Controller
         Investment::find($id)->delete();
         return redirect('investments');
     }
+
+
 }
 
 

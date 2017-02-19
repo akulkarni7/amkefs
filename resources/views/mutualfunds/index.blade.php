@@ -23,7 +23,7 @@
                 <td>{{ $mutualfund->customer->cust_number}}</td>
                 <td>{{ $mutualfund->customer->name}}</td>
                 <td>{{ $mutualfund->fund_name}}</td>
-                <td>{{ $mutualfund->fund_asset}}</td>
+                <td>{{ $mutualfund->fund_assets}}</td>
                 <td>{{ $mutualfund->amount}}</td>
                 <td>{{ $mutualfund->purchase_price}}</td>
                 <td>{{ $mutualfund->purchased}}</td>

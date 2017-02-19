@@ -41,6 +41,7 @@ class MutualFundsController extends Controller
     {
 
         $mutualfund= new MutualFund($request->all());
+        print_r($mutualfund);
         $mutualfund->save();
 
         return redirect('mutualfunds');

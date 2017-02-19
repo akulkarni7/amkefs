@@ -8,12 +8,12 @@
     </div>
 
     <div class="form-group">
-        {!! Form::label('fund name', 'Fund Name:') !!}
-        {!! Form::text('fund name',null,['class'=>'form-control']) !!}
+        {!! Form::label('fund_name', 'Fund Name:') !!}
+        {!! Form::text('fund_name',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
-        {!! Form::label('fund asset', 'Fund Asset:') !!}
-        {!! Form::text('fund asset',null,['class'=>'form-control']) !!}
+        {!! Form::label('fund_assets', 'Fund Asset:') !!}
+        {!! Form::text('fund_assets',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
         {!! Form::label('amount', 'Amount:') !!}

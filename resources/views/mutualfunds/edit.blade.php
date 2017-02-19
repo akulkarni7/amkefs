@@ -1,14 +1,14 @@
 @extends('app')
 @section('content')
     <h1>Update Mutual Fund</h1>
-    {!! Form::model($mutualfund,['method' => 'PATCH','route'=>['MutualFunds.update',$mutualfund->id]]) !!}
+    {!! Form::model($mutualfund,['method' => 'PATCH','route'=>['mutualfunds.update',$mutualfund->id]]) !!}
     <div class="form-group">
-        {!! Form::label('fund name', 'Fund Name:') !!}
-        {!! Form::text('fund name',null,['class'=>'form-control']) !!}
+        {!! Form::label('fund_name', 'Fund Name:') !!}
+        {!! Form::text('fund_name',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
-        {!! Form::label('fund asset', 'Fund Asset:') !!}
-        {!! Form::text('fund asset',null,['class'=>'form-control']) !!}
+        {!! Form::label('fund_assets', 'Fund Asset:') !!}
+        {!! Form::text('fund_assets',null,['class'=>'form-control']) !!}
     </div>
     <div class="form-group">
         {!! Form::label('amount', 'Amount:') !!}
